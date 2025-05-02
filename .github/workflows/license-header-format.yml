@@ -44,13 +44,4 @@ jobs:
       - name: License header format (msa/black-box-tests/)
         run: mvn -T 1C license:format -f msa/black-box-tests/
         
-      - name: Commit & Push License Header
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git config user.name "Tony"
-          git config user.email "toonpetep06@gmail.com"
-          git add .
-          git commit -m "License header format" || echo "No changes to commit"
-          git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
 
