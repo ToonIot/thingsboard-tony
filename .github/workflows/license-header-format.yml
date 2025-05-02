@@ -46,7 +46,7 @@ jobs:
 
       - name: Commit & Push License Header
         run: |
-          git config user.name "toonep06t"
+          git config user.name "Tony"
           git config user.email "toonpetep06@gmail.com"
           git add .
           git commit -m "License header format" || echo "No changes to commit"
