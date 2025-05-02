@@ -1,11 +1,11 @@
-ame: Build ThingsBoard CE
+name: Build ThingsBoard CE
 
 on:
   push:
     branches:
       - main
   pull_request:
-
+  workflow_dispatch:  # ✅ เพิ่มบรรทัดนี้เพื่อเปิดปุ่ม Run workflow
 jobs:
   build:
     runs-on: ubuntu-latest
