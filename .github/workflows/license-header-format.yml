@@ -46,7 +46,7 @@ jobs:
 
       - name: Set Git user information
         run: |
-          git config user.name "Tony
+          git config user.name "Tony"
           git config user.email "toonpetep06@gmail.com"
 
       - name: Check and push changes
